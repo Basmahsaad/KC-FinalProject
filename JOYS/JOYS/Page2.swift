@@ -22,10 +22,6 @@ struct Page2: View {
                 .frame(width: 320, height: 540, alignment:.topLeading)
              //
             VStack {
-                //Text("Email Address")
-                    //.font(.system(size: 25))
-                   // .frame(width: 360, height: 20, alignment:.topLeading)
-                //
                 TextField("EMAIL ADDRESS ", text: $emailname)
                     .font(.title2)
                     .font(.system(size: 20))
@@ -36,7 +32,7 @@ struct Page2: View {
                     .overlay(.black.opacity(0.3))
                  .frame(width: 350, height: 30, alignment: .topLeading)
                  //
-            TextField("PASSWORD", text: $password)
+            SecureField("PASSWORD", text: $password)
                     .font(.title2)
                     .font(.system(size: 20))
                     .padding(.leading,30)
@@ -48,7 +44,6 @@ struct Page2: View {
             }.padding()
                 .frame(width:400, height: 370,alignment: .top)
     }
-        
         
         
         
