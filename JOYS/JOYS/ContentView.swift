@@ -39,11 +39,11 @@ struct ContentView: View {
                 
                 
                 HStack {
-                    NavigationLink("GET START",destination: Text("HI"))
-                        .font(.system(size: 29))
+                    NavigationLink("GET START",destination:Page2())
                         .foregroundColor(.black)
+                        .font(.system(size: 25))
                     Image(systemName:"chevron.right")
-                        .font(.system(size: 29))
+                        .font(.system(size: 25))
                     
                 }.frame(width: 300, height: 50, alignment:.leading)
                     .padding(.top,200)
