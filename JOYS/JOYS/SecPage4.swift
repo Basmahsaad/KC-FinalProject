@@ -10,17 +10,43 @@ import SwiftUI
 struct SecPage4: View {
     struct HomeView: View {
         var body: some View {
-            NavigationView{
+            
                 ZStack{
                     Color.theme.Color1.ignoresSafeArea(edges:.bottom)
                     Color.theme.Color2.ignoresSafeArea(edges:.top)
                     
+                   
+                    
+                    
+                    ScrollView{
+                        VStack{
+                            
+                            Divider()
+                                .frame(width: 370, height: 1, alignment: .top)
+                                .overlay(.gray)
+                                .padding(.bottom)
+                           
+                            Text("HBHSDBVHBV")
+                            Text("HBHSDBVHBV")
+                            Text("HBHSDBVHBV")
+                            Text("HBHSDBVHBV")
+                            Text("HBHSDBVHBV")
+                            Text("HBHSDBVHBV")
+                            Text("HBHSDBVHBV")
+                            
+                            
+                        }
+                    }
+                    .navigationBarHidden(true)
+         
                     
                 }
-                .navigationTitle("home")
+                
+           
+                
                 
                 //
-            }
+            
         }
         //
     }
@@ -28,7 +54,7 @@ struct SecPage4: View {
     
         struct CategoriesView: View {
             var body: some View {
-                NavigationView{
+                
                     ZStack{
                         Color.theme.Color1.ignoresSafeArea(edges:.bottom)
                         Color.theme.Color2.ignoresSafeArea(edges:.top)
@@ -37,7 +63,7 @@ struct SecPage4: View {
                     .navigationTitle("Categories")
                     
                     //
-                }
+                
             }
             //
         }

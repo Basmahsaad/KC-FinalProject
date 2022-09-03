@@ -11,7 +11,7 @@ struct Page2: View {
     @State var emailname: String = ""
     @State var password: String = ""
     var body: some View {
-        NavigationView {
+        
             ZStack{
                 Image("44")
                     .resizable()
@@ -84,7 +84,7 @@ struct Page2: View {
                 
                 //
             }
-        }
+        
         
         
         
