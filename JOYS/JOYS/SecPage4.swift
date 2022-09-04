@@ -20,11 +20,24 @@ struct SecPage4: View {
                     
                     ScrollView{
                         VStack{
+                            Text("ALL ACTIVITIES")
+                                .font(.system(size: 35))
+                                .fontWeight(.medium)
+                                .kerning(2)
+                                .frame(width: 380, height: 50, alignment: .leading)
+                                .padding()
+                            
+                                Divider()
+                                .frame(width: 370, height: 1, alignment: .top)
+                                .overlay(.gray)
+                                .padding(.bottom)
+                            //
                             ScrollView(.horizontal){
-                                Text("hi")
-                                
-                                    .font(.system(size: 29))
-                                    .padding()
+                               Image("Asean")
+                                    .resizable()
+                                    .frame(width:420, height: 260)
+                                    .padding(.bottom)
+                                    
                             }
                             
                             Divider()
@@ -38,8 +51,6 @@ struct SecPage4: View {
                             Text("HBHSDBVHBV")
                             Text("HBHSDBVHBV")
                             Text("HBHSDBVHBV")
-                            Text("HBHSDBVHBV")
-                            
                             
                         }
                     }
@@ -48,9 +59,7 @@ struct SecPage4: View {
                     
                 }
                 
-           
-                
-                
+              
                 //
             
         }
@@ -117,7 +126,11 @@ struct SecPage4: View {
 
 struct SecPage4_Previews: PreviewProvider {
     static var previews: some View {
-        SecPage4()
-            .preferredColorScheme(.dark)
+        Group {
+            SecPage4()
+                .preferredColorScheme(.light)
+            SecPage4()
+                .preferredColorScheme(.dark)
+        }
     }
 }
