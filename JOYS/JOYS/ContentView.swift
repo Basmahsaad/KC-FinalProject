@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack{
-                Image("33")
+                Image("66")
                     .resizable()
                     .ignoresSafeArea()
                 
@@ -34,13 +34,13 @@ struct ContentView: View {
                             .kerning(2)
                             .frame(width: 350, height: 90, alignment: .leading)
                             .padding(.leading,30)
-                    }
+                    }        
                 }.padding(.bottom,400)
                 
                 
                 HStack {
                     NavigationLink("GET START",destination:Page2())
-                        .foregroundColor(.black)
+                        .foregroundColor(.theme.Color5)
                         .font(.system(size: 25))
                     Image(systemName:"chevron.right")
                         .font(.system(size: 25))
@@ -59,7 +59,12 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .previewDevice("iPhone 11")
+        Group {
+            ContentView()
+                .preferredColorScheme(.dark)
+                .previewDevice("iPhone 11")
+            ContentView()
+                .previewDevice("iPhone 11")
+        }
     }
 }

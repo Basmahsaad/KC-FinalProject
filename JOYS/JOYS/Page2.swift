@@ -13,7 +13,7 @@ struct Page2: View {
     var body: some View {
         
             ZStack{
-                Image("44")
+                Image("22")
                     .resizable()
                     .ignoresSafeArea()
                 Text("LOG IN")
@@ -30,7 +30,7 @@ struct Page2: View {
                         .background(.clear)
                     Divider()
                         .frame(height:2)
-                        .overlay(.black.opacity(0.3))
+                        .overlay(Color.theme.Color5)
                      .frame(width: 350, height: 30, alignment: .topLeading)
                      //
                 SecureField("PASSWORD", text: $password)
@@ -40,7 +40,7 @@ struct Page2: View {
                         .background(.clear)
                     Divider()
                         .frame(height:2)
-                        .overlay(.black.opacity(0.3))
+                        .overlay(Color.theme.Color5)
                         .frame(width: 350, height: 30, alignment: .topLeading)
                 }.padding(.bottom)
                     .frame(width:400, height: 370,alignment: .top)
@@ -71,7 +71,7 @@ struct Page2: View {
                         .fontWeight(.light)
                         .kerning(2)
                         .foregroundColor(.white)
-                        .frame(width: 300, height: 40, alignment:.bottom)
+                        .frame(width: 300, height: 70, alignment:.bottom)
                         .padding(.top,490)
                     
                     NavigationLink("SING UP !",destination:SingupPage5())
@@ -82,8 +82,10 @@ struct Page2: View {
 
                 }
                 
+                
                 //
             }
+            .navigationBarBackButtonHidden(true)
         
         
         
@@ -94,6 +96,10 @@ struct Page2: View {
 
 struct Page2_Previews: PreviewProvider {
     static var previews: some View {
-        Page2()
+        Group {
+            Page2()
+                .preferredColorScheme(.dark)
+            Page2()
+        }
     }
 }

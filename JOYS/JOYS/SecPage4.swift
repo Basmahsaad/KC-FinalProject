@@ -13,13 +13,19 @@ struct SecPage4: View {
             
                 ZStack{
                     Color.theme.Color1.ignoresSafeArea(edges:.bottom)
-                    Color.theme.Color2.ignoresSafeArea(edges:.top)
+                    Color.theme.Color3.ignoresSafeArea(edges:.top)
                     
                    
                     
                     
                     ScrollView{
                         VStack{
+                            ScrollView(.horizontal){
+                                Text("hi")
+                                
+                                    .font(.system(size: 29))
+                                    .padding()
+                            }
                             
                             Divider()
                                 .frame(width: 370, height: 1, alignment: .top)
@@ -37,7 +43,7 @@ struct SecPage4: View {
                             
                         }
                     }
-                    .navigationBarHidden(true)
+                    .navigationBarBackButtonHidden(true)
          
                     
                 }
@@ -57,10 +63,24 @@ struct SecPage4: View {
                 
                     ZStack{
                         Color.theme.Color1.ignoresSafeArea(edges:.bottom)
-                        Color.theme.Color2.ignoresSafeArea(edges:.top)
+                        Color.theme.Color3.ignoresSafeArea(edges:.top)
                     
+                        
+                        
+                        ScrollView{
+                            VStack{
+                        Text("hi")
+                        
+                        
+                        }
                     }
-                    .navigationTitle("Categories")
+                    
+                        
+                        
+                        
+                     
+                    }
+                    
                     
                     //
                 
@@ -86,6 +106,7 @@ struct SecPage4: View {
                     }
 
             }
+            
             .accentColor(Color.white)
         
         
@@ -97,5 +118,6 @@ struct SecPage4: View {
 struct SecPage4_Previews: PreviewProvider {
     static var previews: some View {
         SecPage4()
+            .preferredColorScheme(.dark)
     }
 }

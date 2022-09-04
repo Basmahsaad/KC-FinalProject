@@ -13,4 +13,7 @@ extension Color {
 struct ColorTheme {
     let Color1 = Color("Color1")
     let Color2 = Color("Color2")
+    let Color3 = Color("Color3")
+    let Color4 = Color("Color4")
+    let Color5 = Color("Color5")
 }

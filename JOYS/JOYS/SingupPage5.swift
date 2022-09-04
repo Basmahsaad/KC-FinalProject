@@ -14,7 +14,7 @@ struct SingupPage5: View {
     
     var body: some View {
         ZStack{
-            Color.theme.Color2.ignoresSafeArea()
+            Color.theme.Color3.ignoresSafeArea()
             
             VStack{
                 Text("SING UP")
@@ -35,6 +35,7 @@ struct SingupPage5: View {
                     .font(.system(size: 20))
                     .frame(width: 315, height: 15, alignment: .leading)
                 Divider()
+                    .overlay(Color.theme.Color4)
                     .frame(width: 350, height: 5, alignment: .bottom)
                 
                 //
@@ -49,6 +50,7 @@ struct SingupPage5: View {
                     .padding(.top,30)
                 
                 Divider()
+                    .overlay(Color.theme.Color4)
                     .frame(width: 350, height: 20)
                 
                 VStack{
@@ -61,14 +63,13 @@ struct SingupPage5: View {
                         .font(.system(size: 20))
                         .frame(width: 318, height:38 , alignment:.bottomLeading)
                     Divider()
+                        .overlay(Color.theme.Color4)
                         .frame(width: 350, height: 5)
                 }
                 VStack{
-                    Text("CREATE AN ACCOUNT")
+                    NavigationLink("CREATE AN ACCOUNT",destination:SecPage4())
                         .font(.system(size: 20))
                         .font(.headline)
-                        .fontWeight(.bold)
-                        .kerning(2)
                         .foregroundColor(.white)
                         .frame(width: 350, height: 70)
                         .background(Color.theme.Color1)
@@ -90,6 +91,10 @@ struct SingupPage5: View {
 
 struct SingupPage5_Previews: PreviewProvider {
     static var previews: some View {
-        SingupPage5()
+        Group {
+            SingupPage5()
+                .preferredColorScheme(.dark)
+            SingupPage5()
+        }
     }
 }
