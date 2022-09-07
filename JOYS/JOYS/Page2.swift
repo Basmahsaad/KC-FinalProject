@@ -74,7 +74,7 @@ struct Page2: View {
                         .frame(width: 300, height: 70, alignment:.bottom)
                         .padding(.top,490)
                     
-                    NavigationLink("SING UP !",destination:LPIn())
+                    NavigationLink("SING UP !",destination:SingupPage5())
                         .font(.system(size: 21))
 
                         .foregroundColor(.white)
