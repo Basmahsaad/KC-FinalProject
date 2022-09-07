@@ -8,16 +8,47 @@
 import SwiftUI
 
 struct LP2: View {
+    var photo: Photo
     var body: some View {
-       Text("ho")
+        ScrollView{
+        VStack(alignment:.center){
+            Image(photo.imageName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 440, height: 260, alignment: .top)
+                .cornerRadius(20)
+            Text(photo.title)
+                .font(.system(size: 26))
+                .kerning(2)
+            
+            Divider()
+                
+            
+            Text(photo.description)
+                .padding()
+                
+            
+            HStack{
+               Image(systemName:"clock.fill")
+                Text(photo.description2)
+            }
+            HStack{
+                Image(systemName:"mappin.and.ellipse")
+                Text(photo.place)
+                
+            }
+            
+            Spacer()
+        }.padding()
+            .frame(width: 380, height: 900, alignment: .top)
         
-        
+    }
         //
     }
 }
 
 struct LP2_Previews: PreviewProvider {
     static var previews: some View {
-        LP2()
+        LP2(photo: PhotoList.Exhibitions.first!)
     }
 }

@@ -102,8 +102,21 @@ struct HomePage : View {
                             .kerning(2)
                             .foregroundColor(.white)
                             .frame(width: 330, height: 160, alignment: .bottomLeading)
-
                     }
+                        ZStack{
+                            Image("V1")
+                                .resizable()
+                                .frame(width: 380, height: 230)
+                                .cornerRadius(20)
+                            Text("Drawing Course")
+                                .font(.system(size: 29))
+                                .kerning(2)
+                                .foregroundColor(.white)
+                                .frame(width: 330, height: 160, alignment: .bottomLeading)
+                            
+                        }
+
+                    
                 }
             }
             //

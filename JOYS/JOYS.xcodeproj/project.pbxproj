@@ -22,6 +22,7 @@
 		A5CB1C8228C71A74007C7969 /* LP2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C8128C71A74007C7969 /* LP2.swift */; };
 		A5CB1C8428C72A2E007C7969 /* DLP0.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C8328C72A2E007C7969 /* DLP0.swift */; };
 		A5CB1C8828C85648007C7969 /* LPIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C8728C85648007C7969 /* LPIn.swift */; };
+		A5CB1C8A28C919A2007C7969 /* LP3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C8928C919A2007C7969 /* LP3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		A5CB1C8128C71A74007C7969 /* LP2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LP2.swift; sourceTree = "<group>"; };
 		A5CB1C8328C72A2E007C7969 /* DLP0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLP0.swift; sourceTree = "<group>"; };
 		A5CB1C8728C85648007C7969 /* LPIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPIn.swift; sourceTree = "<group>"; };
+		A5CB1C8928C919A2007C7969 /* LP3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LP3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				A5CB1C7E28C71A3E007C7969 /* LP1.swift */,
 				A5CB1C8128C71A74007C7969 /* LP2.swift */,
+				A5CB1C8928C919A2007C7969 /* LP3.swift */,
 				A5CB1C8328C72A2E007C7969 /* DLP0.swift */,
 			);
 			path = LastPages;
@@ -194,6 +197,7 @@
 				A5CB1C8228C71A74007C7969 /* LP2.swift in Sources */,
 				A5CB1C8428C72A2E007C7969 /* DLP0.swift in Sources */,
 				A5CB1C7028C28072007C7969 /* SingupPage5.swift in Sources */,
+				A5CB1C8A28C919A2007C7969 /* LP3.swift in Sources */,
 				A5CB1C7B28C5CBA2007C7969 /* View3.swift in Sources */,
 				A5CB1C8828C85648007C7969 /* LPIn.swift in Sources */,
 				A5CB1C5128BA28D4007C7969 /* JOYSApp.swift in Sources */,

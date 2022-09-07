@@ -9,23 +9,32 @@ import Foundation
 import SwiftUI
 
 struct View3: View {
+    var photos: [Photo] = PhotoList.Exhibitions
     var body: some View {
-        ScrollView{
-        ZStack{
-            Color.theme.Color3.edgesIgnoringSafeArea(.all)
-            Image("Exh1")
-                .resizable()
-                .frame(width: 400, height: 250, alignment:.top)
-                .cornerRadius(20)
-            Text("Exhibitions")
-                .foregroundColor(.white)
-                .font(.system(size: 60))
-                .fontWeight(.light)
+        
+        List(photos, id: \.id){ photo in
+                NavigationLink(destination:LP2(photo:photo), label: {
+                    HStack{
+                        Image(photo.imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height:100)
+                            .cornerRadius(15)
+                        
+                        VStack(alignment:.leading){
+                            Text(photo.title)
+                                .font(.system(size: 25))
+                                .foregroundColor(.theme.Color5)
+                                .fontWeight(.light)
+                            Text(photo.Eby)
+                                .font(.system(size: 17))
+                                .font(.subheadline)
+                                .foregroundColor(.theme.Color4)
+                    }
+                    }
+                })
             
-        }.padding()
         }
-        
-        
         
    //
     }

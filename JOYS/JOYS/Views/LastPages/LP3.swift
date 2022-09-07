@@ -1,15 +1,16 @@
 //
-//  LP1.swift
+//  LP3.swift
 //  JOYS
 //
-//  Created by basmah saad on 06/09/2022.
+//  Created by basmah saad on 07/09/2022.
 //
 
 import SwiftUI
 
-struct LP1: View {
-    var photo: Photo 
+struct LP3: View {
+    var photo: Photo
     var body: some View {
+        
         ScrollView{
         VStack(alignment:.center){
             Image(photo.imageName)
@@ -35,18 +36,24 @@ struct LP1: View {
             HStack{
                 Image(systemName:"mappin.and.ellipse")
                 Text(photo.place)
+                
             }
             
             Spacer()
         }.padding()
+            .frame(width: 380, height: 900, alignment: .top)
+        
     }
+        
+        
+        
         
         //
     }
 }
 
-struct LP1_Previews: PreviewProvider {
+struct LP3_Previews: PreviewProvider {
     static var previews: some View {
-        LP1(photo: PhotoList.Courses.first!)
+        LP3(photo: PhotoList.Opening.first!)
     }
 }
