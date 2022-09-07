@@ -67,7 +67,7 @@ struct SingupPage5: View {
                         .frame(width: 350, height: 5)
                 }
                 VStack{
-                    NavigationLink("CREATE AN ACCOUNT",destination:SecPage4())
+                    NavigationLink("CREATE AN ACCOUNT",destination:LPIn())
                         .font(.system(size: 20))
                         .font(.headline)
                         .foregroundColor(.white)

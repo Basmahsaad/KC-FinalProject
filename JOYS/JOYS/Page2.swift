@@ -52,7 +52,7 @@ struct Page2: View {
                         .foregroundColor(Color.gray)
                         .frame(width: 346, height: 88, alignment: .topTrailing)
                     
-                    NavigationLink("LOG IN",destination:SecPage4())
+                    NavigationLink("LOG IN",destination:LPIn())
                         .font(.system(size: 30))
                         .font(.headline)
                         .foregroundColor(.white)
@@ -74,7 +74,7 @@ struct Page2: View {
                         .frame(width: 300, height: 70, alignment:.bottom)
                         .padding(.top,490)
                     
-                    NavigationLink("SING UP !",destination:SingupPage5())
+                    NavigationLink("SING UP !",destination:LPIn())
                         .font(.system(size: 21))
 
                         .foregroundColor(.white)

@@ -15,18 +15,18 @@ struct View1: View {
         List(photos, id: \.id){ photo in
                 NavigationLink(destination:LP1(photo:photo), label: {
                     HStack{
-                       Image("V2")
+                        Image(photo.imageName)
                             .resizable()
                             .scaledToFit()
                             .frame(height:100)
                             .cornerRadius(15)
                         
                         VStack(alignment:.leading){
-                        Text("TEXTURE ART")
-                                .font(.system(size: 30))
+                            Text(photo.title)
+                                .font(.system(size: 25))
                                 .foregroundColor(.theme.Color5)
                                 .fontWeight(.light)
-                       Text(" By Noor Design")
+                            Text(photo.Eby)
                                 .font(.system(size: 17))
                                 .font(.subheadline)
                                 .foregroundColor(.theme.Color4)

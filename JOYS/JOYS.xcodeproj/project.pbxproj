@@ -13,17 +13,15 @@
 		A5CB1C5828BA28D5007C7969 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5CB1C5728BA28D5007C7969 /* Preview Assets.xcassets */; };
 		A5CB1C5F28BF9624007C7969 /* Page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C5E28BF9624007C7969 /* Page2.swift */; };
 		A5CB1C6128C16891007C7969 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C6028C16891007C7969 /* Colors.swift */; };
-		A5CB1C6328C18DFB007C7969 /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C6228C18DFB007C7969 /* Page3.swift */; };
-		A5CB1C6728C20D38007C7969 /* SecPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C6628C20D38007C7969 /* SecPage4.swift */; };
 		A5CB1C7028C28072007C7969 /* SingupPage5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C6F28C28072007C7969 /* SingupPage5.swift */; };
 		A5CB1C7428C45B75007C7969 /* Launch Screen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CB1C7328C45B74007C7969 /* Launch Screen2.storyboard */; };
 		A5CB1C7628C5CB2E007C7969 /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C7528C5CB2E007C7969 /* View1.swift */; };
 		A5CB1C7828C5CB62007C7969 /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C7728C5CB62007C7969 /* View2.swift */; };
 		A5CB1C7B28C5CBA2007C7969 /* View3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C7A28C5CBA2007C7969 /* View3.swift */; };
-		A5CB1C7D28C5D5A4007C7969 /* View4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C7C28C5D5A4007C7969 /* View4.swift */; };
 		A5CB1C7F28C71A3F007C7969 /* LP1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C7E28C71A3E007C7969 /* LP1.swift */; };
 		A5CB1C8228C71A74007C7969 /* LP2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C8128C71A74007C7969 /* LP2.swift */; };
 		A5CB1C8428C72A2E007C7969 /* DLP0.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C8328C72A2E007C7969 /* DLP0.swift */; };
+		A5CB1C8828C85648007C7969 /* LPIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB1C8728C85648007C7969 /* LPIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,17 +32,15 @@
 		A5CB1C5728BA28D5007C7969 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5CB1C5E28BF9624007C7969 /* Page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2.swift; sourceTree = "<group>"; };
 		A5CB1C6028C16891007C7969 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		A5CB1C6228C18DFB007C7969 /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
-		A5CB1C6628C20D38007C7969 /* SecPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecPage4.swift; sourceTree = "<group>"; };
 		A5CB1C6F28C28072007C7969 /* SingupPage5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupPage5.swift; sourceTree = "<group>"; };
 		A5CB1C7328C45B74007C7969 /* Launch Screen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen2.storyboard"; sourceTree = "<group>"; };
 		A5CB1C7528C5CB2E007C7969 /* View1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1.swift; sourceTree = "<group>"; };
 		A5CB1C7728C5CB62007C7969 /* View2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
 		A5CB1C7A28C5CBA2007C7969 /* View3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3.swift; sourceTree = "<group>"; };
-		A5CB1C7C28C5D5A4007C7969 /* View4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View4.swift; sourceTree = "<group>"; };
 		A5CB1C7E28C71A3E007C7969 /* LP1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LP1.swift; sourceTree = "<group>"; };
 		A5CB1C8128C71A74007C7969 /* LP2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LP2.swift; sourceTree = "<group>"; };
 		A5CB1C8328C72A2E007C7969 /* DLP0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLP0.swift; sourceTree = "<group>"; };
+		A5CB1C8728C85648007C7969 /* LPIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +78,8 @@
 				A5CB1C5228BA28D4007C7969 /* ContentView.swift */,
 				A5CB1C5E28BF9624007C7969 /* Page2.swift */,
 				A5CB1C6028C16891007C7969 /* Colors.swift */,
-				A5CB1C6228C18DFB007C7969 /* Page3.swift */,
-				A5CB1C6628C20D38007C7969 /* SecPage4.swift */,
 				A5CB1C6F28C28072007C7969 /* SingupPage5.swift */,
+				A5CB1C8728C85648007C7969 /* LPIn.swift */,
 				A5CB1C7928C5CB78007C7969 /* Views */,
 				A5CB1C5428BA28D5007C7969 /* Assets.xcassets */,
 				A5CB1C5628BA28D5007C7969 /* Preview Content */,
@@ -106,7 +101,6 @@
 				A5CB1C7528C5CB2E007C7969 /* View1.swift */,
 				A5CB1C7728C5CB62007C7969 /* View2.swift */,
 				A5CB1C7A28C5CBA2007C7969 /* View3.swift */,
-				A5CB1C7C28C5D5A4007C7969 /* View4.swift */,
 				A5CB1C8028C71A47007C7969 /* LastPages */,
 			);
 			path = Views;
@@ -193,19 +187,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5CB1C6328C18DFB007C7969 /* Page3.swift in Sources */,
 				A5CB1C7828C5CB62007C7969 /* View2.swift in Sources */,
 				A5CB1C5328BA28D4007C7969 /* ContentView.swift in Sources */,
-				A5CB1C7D28C5D5A4007C7969 /* View4.swift in Sources */,
 				A5CB1C7628C5CB2E007C7969 /* View1.swift in Sources */,
 				A5CB1C6128C16891007C7969 /* Colors.swift in Sources */,
 				A5CB1C8228C71A74007C7969 /* LP2.swift in Sources */,
 				A5CB1C8428C72A2E007C7969 /* DLP0.swift in Sources */,
 				A5CB1C7028C28072007C7969 /* SingupPage5.swift in Sources */,
 				A5CB1C7B28C5CBA2007C7969 /* View3.swift in Sources */,
+				A5CB1C8828C85648007C7969 /* LPIn.swift in Sources */,
 				A5CB1C5128BA28D4007C7969 /* JOYSApp.swift in Sources */,
 				A5CB1C7F28C71A3F007C7969 /* LP1.swift in Sources */,
-				A5CB1C6728C20D38007C7969 /* SecPage4.swift in Sources */,
 				A5CB1C5F28BF9624007C7969 /* Page2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
