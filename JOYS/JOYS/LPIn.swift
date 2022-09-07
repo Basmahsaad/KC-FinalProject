@@ -54,18 +54,63 @@ struct HomePage : View {
                     .kerning(2)
                     .fontWeight(.light)
                     .foregroundColor(.theme.Color5)
+                    .frame(width:300,height: 30, alignment:.leading)
                 
                 Spacer(minLength: 0)
             }
             .padding()
-            .background(Color.white)
+            .background(Color.theme.Color1)
             .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
             
             Spacer()
+            VStack{
+                ScrollView{
+                ZStack{
+                  Image("V3")
+                        .resizable()
+                        .frame(width: 380, height: 230)
+                        .cornerRadius(20)
+                    Text("KUWAIT INTERNATIONAL")
+                        .font(.system(size: 23))
+                        .kerning(2)
+                        .foregroundColor(.white)
+                        .frame(width: 330, height: 90, alignment: .bottomLeading)
+                    Text("BOOK FAIR")
+                        .font(.system(size: 39))
+                        .kerning(2)
+                        .foregroundColor(.white)
+                        .frame(width: 330, height: 180, alignment: .bottomLeading)
+                }
+                    ZStack{
+                        Image("Sec3")
+                            .resizable()
+                            .frame(width: 380, height: 230)
+                            .cornerRadius(20)
+                        Text("TEXTURE ART")
+                            .font(.system(size: 39))
+                            .kerning(2)
+                            .foregroundColor(.white)
+                            .frame(width: 330, height: 180, alignment: .bottomLeading)
+                    }
+                    ZStack{
+                        Image("CTB!")
+                            .resizable()
+                            .frame(width: 380, height: 230)
+                            .cornerRadius(20)
+                        Text("EXHIBITION OPENING")
+                            .font(.system(size: 29))
+                            .kerning(2)
+                            .foregroundColor(.white)
+                            .frame(width: 330, height: 160, alignment: .bottomLeading)
+
+                    }
+                }
+            }
+            //
         }
         // for drag  gesture  ..
         .contentShape(Rectangle())
-        .background(Color.theme.Color1)
+        .background(Color.theme.Color3)
             .navigationBarHidden(true)
     }
 }
@@ -186,32 +231,51 @@ struct SlideMenu : View {
                 VStack(alignment: .leading) {
                     // Menu  Buttons ...
                     
-                    ForEach(menuButtons,id: \.self){ menu in
-                        
-                        Button(action: {
-                            //  switch your actions or ...
-                        }) {
-                            
-                            MenuButton(title: menu)
-                        }
-                        
+                    Button(action: {}) {
+                        NavigationLink("Courses",destination:View1())
+                            .font(.system(size: 22))
+                            .foregroundColor(.theme.Color5)
                     }
+                    .padding()
+                    Divider()
+                    .frame(width: 220)
+                    
+                    
+                    Button(action: {}) {
+                        NavigationLink("Openings",destination:View2())
+                            .font(.system(size: 22))
+                            .foregroundColor(.theme.Color5)
+                    }
+                    .padding()
+                    Divider()
+                    .frame(width: 220)
+                    
+                    
+                    Button(action: {}) {
+                        NavigationLink("Exhibitions",destination:View3())
+                            .font(.system(size: 22))
+                            .foregroundColor(.theme.Color5)
+                    }
+                    .padding()
+                    
+                        
                     
                     
                     Divider()
-                        .padding(.top)
+                        .frame(width:230)
                     
                     Button(action: {}) {
-                        Text("Settings and privacy")
-                            .foregroundColor(.black)
+                        Text("Settings & privacy")
+                            .font(.system(size: 17))
+                            .foregroundColor(.gray)
                     }
-                    .padding(.top)
                     
                     Button(action: {}) {
                         Text("Help centre")
-                            .foregroundColor(.black)
+                            .font(.system(size: 17))
+                            .foregroundColor(.gray)
                     }
-                    .padding(.top,20)
+                    
                     
                     Spacer(minLength: 0)
                     
@@ -226,15 +290,17 @@ struct SlideMenu : View {
                 VStack(alignment: .leading){
                     Button(action: {}) {
                     
-                        Text("For your inquiries, please contact us 965+8645346")
-                            .foregroundColor(.theme.Color5)
+                        Text("For your inquiries please contact us 965+8645346")
+                            .font(.system(size: 16))
+                            .foregroundColor(.theme.Color1)
                     }
                     .padding(.bottom)
                     
                     Button(action: {}) {
                     
                         Text("Join us on Instagram @JOYSAPP")
-                            .foregroundColor(.theme.Color5)
+                            .font(.system(size: 16))
+                            .foregroundColor(.theme.Color1)
                     }
                     Spacer(minLength: 0)
                 }
