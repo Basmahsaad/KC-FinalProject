@@ -30,7 +30,7 @@ struct Page2: View {
                         .background(.clear)
                     Divider()
                         .frame(height:2)
-                        .overlay(Color.theme.Color5)
+                        .overlay(Color.theme.Color4)
                      .frame(width: 350, height: 30, alignment: .topLeading)
                      //
                 SecureField("PASSWORD", text: $password)
@@ -40,7 +40,7 @@ struct Page2: View {
                         .background(.clear)
                     Divider()
                         .frame(height:2)
-                        .overlay(Color.theme.Color5)
+                        .overlay(Color.theme.Color4)
                         .frame(width: 350, height: 30, alignment: .topLeading)
                 }.padding(.bottom)
                     .frame(width:400, height: 370,alignment: .top)

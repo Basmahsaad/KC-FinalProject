@@ -43,7 +43,7 @@ struct HomePage : View {
                     
                     Image(systemName: "line.horizontal.3")
                         .font(.system(size: 27))
-                        .foregroundColor(Color.theme.Color5)
+                        .foregroundColor(Color.theme.Color3)
                     
                 }
                 
@@ -53,7 +53,7 @@ struct HomePage : View {
                     .font(.system(size: 30))
                     .kerning(2)
                     .fontWeight(.light)
-                    .foregroundColor(.theme.Color5)
+                    .foregroundColor(.theme.Color3)
                     .frame(width:300,height: 30, alignment:.leading)
                 
                 Spacer(minLength: 0)
@@ -330,7 +330,7 @@ struct SlideMenu : View {
             .padding(.bottom, edges!.bottom == 0 ? 15 : edges?.bottom)
             // default .. ....
             .frame(width: UIScreen.main.bounds.width - 90)
-            .background(Color.white)
+            .background(Color.theme.Color3)
             .ignoresSafeArea(.all, edges: .vertical)
             
             Spacer(minLength: 0)
@@ -351,7 +351,7 @@ struct FollowView : View {
             
             Text("\(count)")
                 .fontWeight(.bold)
-                .foregroundColor(.theme.Color5)
+                .foregroundColor(.theme.Color3)
             
             Text(title)
                 .foregroundColor(.gray)
