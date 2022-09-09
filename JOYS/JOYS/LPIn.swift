@@ -156,38 +156,7 @@ struct Home : View {
                     }
                 })
         }
-        // adding gesture or drag feature ....
-        .gesture(DragGesture().onChanged({ (value) in
-            
-            withAnimation{
-                if value.translation.width > 0 {
-                   // disabling over  drag ...
-                    
-                    
-                    if x < 0 {
-                        
-                        x = -width + value.translation.width
-                    }
-                }
-                else{
-                    x = value.translation.width
-                }
-            }
-            
-        }).onEnded({ (value) in
-            
-            withAnimation{
-                
-                // checking if  half the value of menu ...
-                
-                if -x < width / 2{
-                    x = 0
-                }
-                else{
-                    x = -width
-                }
-            }
-        }))
+       //
     }
 }
 
